@@ -1,6 +1,6 @@
 # Youtube Music Search
 
-Firefox extensions to search for the track you're listening to on Beatport or Amazon Music.
+Firefox extensions to search for the track you're listening to on Beatport, Amazon Music or Traxsource.
 
 ### Testing the extension
 

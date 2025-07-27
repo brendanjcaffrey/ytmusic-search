@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Music Traxsource Search",
+  "version": "1.1",
+  "description": "Search currently playing YouTube Music track on Traxsource",
+  "permissions": [
+    "tabs",
+    "scripting",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "*://music.youtube.com/*"
+  ],
+  "action": {
+    "default_icon": "icons/icon.png",
+    "default_title": "Search on Traxsource"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.youtube.com/*",
+        "*://music.youtube.com/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "ytts@jcaffrey.com",
+      "strict_min_version": "140.0"
+    }
+  }
+}
